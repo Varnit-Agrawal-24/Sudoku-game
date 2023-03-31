@@ -42,6 +42,12 @@ for(let number of numbers){
         if(!number.value==0) document.querySelector(".active").innerHTML="";
         else document.querySelector(".active").innerHTML=number.innerHTML;
         if(checkNumber()) putValue();
+        else{
+            for(let i=0;i<9;i++){
+                numbers[i].disabled=true;
+            }
+        }
+
     });
 }
 
@@ -270,6 +276,7 @@ function checkNumber(){
     return true;
 }
 function checking(x,y,num){
+    if(num==0) return false;
     let flag=false;
     let boxes=document.querySelectorAll('.box');
     // row
@@ -314,5 +321,6 @@ function result(){
         localStorage.removeItem("sudokuMatrix");
         localStorage.removeItem("initalFilled");
         document.querySelector(".result").classList.remove("hide")
+        for(let number of numbers) number.disabled=true;
     }
 }

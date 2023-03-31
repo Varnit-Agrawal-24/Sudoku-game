@@ -95,16 +95,16 @@ position: absolute;
 .box{
     height: calc(100%/9);
     width: calc(100%/9);
-    border: 1px solid #ddd;
+    border: 0.5px solid #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 36px;
-    background-color: #bea8de;
+    background-color: #5b1dad;
     color: skyblue;
  } 
 .box:nth-child(3n){
-    border-right:4px solid black ;
+    border-right:4px solid #d9e708;
 }
 .box:nth-child(27n+19)
 ,.box:nth-child(27n+20)
@@ -115,7 +115,7 @@ position: absolute;
 ,.box:nth-child(27n+25)
 ,.box:nth-child(27n+26)
 ,.box:nth-child(27n+27){
-    border-bottom:4px solid black ;
+    border-bottom:4px solid #d9e708 ;
 }
 .box:nth-child(1)
 ,.box:nth-child(2)
@@ -126,10 +126,10 @@ position: absolute;
 ,.box:nth-child(7)
 ,.box:nth-child(8)
 ,.box:nth-child(9){
-    border-top:4px solid black ;
+    border-top:4px solid #d9e708 ;
 }
 .box:nth-child(9n+1){
-    border-left:4px solid black ;
+    border-left:4px solid #d9e708 ;
 }
 .number{
     background-color: #5b1dad;
@@ -137,13 +137,19 @@ position: absolute;
     padding: 12px;
     font-size: 30px;
 }
+.number:disabled{
+    background-color: #bea8de;
+}
+.number:hover{
+    transform: scale(1.05);
+}
 
 
 .filled{
-    background-color: rgb(27, 27, 71);
+    background-color: rgb(27, 27, 71) !important;
 }
 .active{
-    border: 5px solid #5b1dad !important ;
+    border: 5px solid #fbcee8 !important ;
 }
 .exist{
     color: red;
