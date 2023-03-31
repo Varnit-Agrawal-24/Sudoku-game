@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <img src="static/img/logo.png" alt="logo">
+        <div class="nav-item">
+            <div class="timer hide">
+                <span class="hr">00</span>:<span class="min">00</span>:<span class="sec">00</span>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav bar -->
+    <!-- main container -->
+    <div class="main-container">
+        <!-- home-page -->
+        <div class="home-page">
+            <img src="static/img/sudoku.png" alt="">
+            <div class="buttons">
+                <button class="continue">Continue</button>
+                <select id="difficulty">
+                    <option value="none" selected hidden>Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="expert">Expert</option>
+                </select>
+                <button class="new-game" disabled>New Game</button>
+            </div>
+            
+        </div>
+        <!--end home page -->
+        <!-- game container -->
+        <div class="game-container hide">
+            <!-- sudoku board -->
+            <div class="sudoku">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <!-- end sudoku board -->
+            <!-- number button -->
+            <div class="numbers">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="number" value="0">Clear</button>
+            </div>
+            <!-- end number button -->
+            <!-- result -->
+            <div class="result hide">
+                <img src="static/img/cong.png" alt="con">
+            </div>
+            <!-- end result -->
+        </div>
+        <!-- game container -->
+    </div>
+    <!-- end main container -->
+    
+
+   
+
+    <!-- js -->
+    <script src="static/SudokuGentrator.js"></script>
+    <script src="static/Script.js"></script>
+
+</body>
+</html>

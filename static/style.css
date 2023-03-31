@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  body{
+    background-color: #ddd;
+    user-select: none;
+  }
+/* navbar */
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bea8de;
+}
+nav img{
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+/* end navbar */
+/* main container */
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* end main container */
+/* home page */
+
+.home-page{
+position: absolute;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.home-page button{
+    height: 60px;
+    width: 200px;
+    background-color:#bea8de ;
+    font-size: 32px;
+    color:#5b1dad;
+    border: 4px solid #fbcee8;
+    border-radius: 10px;
+}
+.home-page select{
+    background-color:#bea8de ;
+    height: 50px;
+    width: 150px;
+    font-size: 24px;
+    text-align: center;
+    color: #5b1dad;
+    border: 3px solid #5b1dad;
+
+}
+.home-page select option{
+    color: #fbcee8;
+}
+.home-page .buttons{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+/* end home page */
+/* game container */
+
+.game-container{
+position: absolute;
+}
+/* end game container */
+/* sudoku board */
+.sudoku{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+    
+    
+}
+.box{
+    height: calc(100%/9);
+    width: calc(100%/9);
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    background-color: #bea8de;
+    color: skyblue;
+ } 
+.box:nth-child(3n){
+    border-right:4px solid black ;
+}
+.box:nth-child(27n+19)
+,.box:nth-child(27n+20)
+,.box:nth-child(27n+21)
+,.box:nth-child(27n+22)
+,.box:nth-child(27n+23)
+,.box:nth-child(27n+24)
+,.box:nth-child(27n+25)
+,.box:nth-child(27n+26)
+,.box:nth-child(27n+27){
+    border-bottom:4px solid black ;
+}
+.box:nth-child(1)
+,.box:nth-child(2)
+,.box:nth-child(3)
+,.box:nth-child(4)
+,.box:nth-child(5)
+,.box:nth-child(6)
+,.box:nth-child(7)
+,.box:nth-child(8)
+,.box:nth-child(9){
+    border-top:4px solid black ;
+}
+.box:nth-child(9n+1){
+    border-left:4px solid black ;
+}
+.number{
+    background-color: #5b1dad;
+    color: #fbcee8;
+    padding: 12px;
+    font-size: 30px;
+}
+
+
+.filled{
+    background-color: rgb(27, 27, 71);
+}
+.active{
+    border: 5px solid #5b1dad !important ;
+}
+.exist{
+    color: red;
+}
+/* end sudoku board */
+
+.hide{
+    display: none;
+}
+.result{
+    position: absolute;
+    top: 15%;
+    left: -35%;
+}
+.timer{
+    font-size: 24px;
+    color: rgb(27, 27, 71);
+}
